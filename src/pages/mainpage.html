@@ -1,14 +1,25 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Juicier</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PUT A TITLE IN HERE -->
+    <title>Your Project Title</title>
+    <!-- PUT A DESCRIPTION IN HERE -->
+    <meta name="description" content="describe content of the page here...." />
+    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+    <link rel="stylesheet" href="styles.normalize.css" />
+    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+    <!-- LINK TO YOUR STYLES -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+    <script src="scripts/scripts.js" defer></script>
+  </head>
     <body>
         <header>
             <div id="container-head">
+                <img src="logo.png" alt="logo">
                 <h1>Juicier</h1>
             </div>
         </header>
@@ -16,10 +27,10 @@
             <h2>Hi, What can we get you today?</h2>
                 <h3>I want...</h3>
                 <div class="form-group">
-                    <input type="radio" id="milk" name="milk-pref" value="Milk">
+                    <input type="radio" id="milk" name="dairy" value="Milk">
                     <label for="milk" >Milk</label>
 
-                    <input type="radio" id="no-milk" name="milk-pref" value="No Milk">
+                    <input type="radio" id="no-milk" name="dairy" value="No Milk">
                     <label for="no-milk">No Milk</label><br>
 
                     <input type="radio" id="low-calories" name="calories" value="Low Calories">
@@ -28,10 +39,10 @@
                     <input type="radio" id="high-calories" name="calories" value="High Calories">
                     <label for="high-calories">High Calories</label><br>
 
-                    <input type="radio" id="fruity" name="protein" value="Fruity">
+                    <input type="radio" id="fruity" name="flavor" value="Fruity">
                     <label for="fruity">Fruity</label>
 
-                    <input type="radio" id="veggie" name="protein" value="Veggie">
+                    <input type="radio" id="veggie" name="flavor" value="Veggie">
                     <label for="veggie">Veggie</label><br>
 
                 </div>
@@ -39,7 +50,6 @@
                 <div class="form-group">
                     <button id="btn-start">START</button>  
                 </div>
-                <script src="script.js"></script>
         </main>
     </body>
 </html>

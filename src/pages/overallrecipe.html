@@ -1,51 +1,73 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Juicier</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <header>
-            <div id="container-head">
-                <h1>Juicier</h1>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- PUT A TITLE IN HERE -->
+        <title>Your Project Title</title>
+        <!-- PUT A DESCRIPTION IN HERE -->
+        <meta name="description" content="describe content of the page here...." />
+        <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+        <link rel="stylesheet" href="styles.normalize.css" />
+        <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+        <!-- LINK TO YOUR STYLES -->
+        <link rel="stylesheet" href="styles/styles.css" />
+        <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+        <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+        <script src="recipescripts.js" defer></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        
+      </head>
+<body>
+    
+    <header>
+        <div id="container-head">
+            <img src="logo.png" alt="logo">
+            <h1>Juicier</h1>
+        </div>
+    </header>
+    <main id="main" tabindex="-1">
+        <div class="overall">
+            <div id="recipe-summary">
+                <!-- add paragraphs -->
+
             </div>
-        </header>
-        <main id="main" tabindex="-1">
-            <div class="overall">
-                <div class="recipe-summary">
-                    <p>Prep Time: 5 minutes</p>
-                    <p>This strawberry blueberry banana smoothie recipe is the perfect creamy blend of fruity flavors! It's a healthy snack or breakfast made in minutes</p>
-                </div>
-                <div class="recipe-name">
-                    <h2>Strawberry Blueberry Smoothie</h2>
-                    <p>Calories Per Serving</p>
-                    <p>221</p>
-                </div>
-            </dib>
-            <div class="detail">
-                <section id="ingredients">
-                    <h2>Ingredients</h2>
-                    <ul>
-                        <li>1/2 cup skim milk (substitute with any nut milk of your choice)</li>
-                        <li>1/2 cup of blueberries fresh or frozen</li>
-                        <li>1 cup of strawberries fresh or frozen</li>
-                        <li>6 ounces of non-fat vanilla yogurt</li>
-                    </ul>
-                </section>
-                <section id="direction">
-                    <h2>Direction</h2>
-                    <ol>
-                        <li>Add milk, blueberries, strawberries and yogurt to a blender</li>
-                        <li>Mix until smooth! If you are using fresh fruit, you may need  to add ice to thicken. Enjoy cold.</li>
-                    </ol>
-                </section>
-                <section id="facts">
-                    <h2>Nutrition facts</h2>
-                    <p>Strawberries provide fiber, potassium, folate and antioxidants, but they also ccontain several bioactive compounds (called flavonoids) that are known to help protect against chronic diseases</p>
-                </section>
+            <div id="recipe-name">
+                 <!-- add h2 and paragraphs -->
+
             </div>
-        </main>
-    </body>
+        </div>
+        <div class="detail">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul id="ingredients-list">
+                    <!-- add list -->
+                </ul>
+            </div>
+            <div id="direction">
+                <h2>Direction</h2>
+                <ol id="direction-list">
+                    
+                </ol>
+            </div>
+            <div id="facts">
+                <!-- add h2 and paragraphs -->
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="home-button">
+            <button id="btn-home">
+                <span class="iconify" data-icon="ant-design:home-filled" style="color: black;"></span>
+            </button>
+        </div>
+        <div id="back-button">
+            <button id="btn-back">
+                <span class="iconify" data-icon="akar-icons:arrow-back-thick-fill" style="color: black;"></span>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
